@@ -1,0 +1,21 @@
+meta {
+  name: Add Move Valid L
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://127.0.0.1:5000/api/games/cccc55cc-32ac-46c1-8174-bd94d41e8789/moves
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+   {
+     "move": "L"
+   }
+}
